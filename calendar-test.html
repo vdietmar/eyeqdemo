@@ -1,0 +1,49 @@
+
+<!DOCTYPE unspecified PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Listing for Channel</title>
+<!--
+<script type="text/javascript" charset="utf-8" src="DataTables-1.9.0/media/js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="DataTables-1.9.0/media/js/jquery.dataTables.js"></script>
+<style type="text/css" title="currentStyle">
+    @import "DataTables-1.9.0/media/css/demo_table.css";
+</style>
+-->
+<!--
+<link rel='stylesheet' type='text/css' href='fullcalendar-1.5.3/fullcalendar/fullcalendar.css' />
+<script type='text/javascript' src='fullcalendar-1.5.3/jquery/jquery-1.7.1.min.js'></script>
+<script type='text/javascript' src='fullcalendar-1.5.3/fullcalendar/fullcalendar.js'></script>
+-->
+<link rel='stylesheet' type='text/css' href='themouette-jquery-week-calendar-b041194/libs/css/smoothness/jquery-ui-1.8.11.custom.css' />
+<link rel='stylesheet' type='text/css' href='themouette-jquery-week-calendar-b041194/jquery.weekcalendar.css' />
+<script type='text/javascript' src='themouette-jquery-week-calendar-b041194/libs/jquery-1.4.4.min.js'></script>
+<script type='text/javascript' src='themouette-jquery-week-calendar-b041194/libs/jquery-ui-1.8.11.custom.min.js'></script>
+<script type="text/javascript" src="themouette-jquery-week-calendar-b041194/libs/date.js"></script>
+<script type='text/javascript' src='themouette-jquery-week-calendar-b041194/jquery.weekcalendar.js'></script>
+<script type="text/javascript" charset="utf-8">
+var eventData = {
+	events : [
+		{"id":2, "title": "Ratgeber: Bauen und Wohnen", "start": "2012-04-22T14:30:00+02:00", "end": "2012-04-22T15:00:00+02:00"}
+	]};
+
+$(document).ready(function() {
+	  $('#calendar').weekCalendar({
+		  height: function($calendar){
+			return $(window).height() - $("h1").outerHeight(true);
+		},		  
+		data: eventData
+	  });
+	});
+</script>
+</head>
+<body>
+<h1>Listing for Channel</h1>
+<p><a href="index.html">Home</a></p>
+<p><b>Info:</b>
+The following program data for the TV channel are retrieved online with a grid lookup.
+All times are UTC!</p>
+<div id='calendar'></div>
+</body>
+</html>
